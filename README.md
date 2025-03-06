@@ -54,11 +54,11 @@ The server should now be running on http://localhost:5000.
 
 #### 1. Get All Customers 🧑‍🤝‍🧑
 - **Endpoint:** GET /customer
-- Retrieves all customers.
+  - Retrieves all customers.
 
 - **Response:**
-- 200 OK with an array of customers.
-- 404 Not Found if no customers are found.
+  - 200 OK with an array of customers.
+  - 404 Not Found if no customers are found.
   
 #### 2. Get Shipping Details by City 🏙️
 - **Endpoint:** GET /shipping/city
