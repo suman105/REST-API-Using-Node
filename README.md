@@ -94,12 +94,12 @@ The server should now be running on http://localhost:5000.
 - **Request Body:**
 
   ```bash
-  {
-    "Customer_Name": "John Doe",
-    "Email": "john.doe@example.com",
-    "Mobile_Number": "1234567890",
-    "City": "New York"
-  }
+    {
+      "Customer_Name": "John Doe",
+      "Email": "john.doe@example.com",
+      "Mobile_Number": "1234567890",
+      "City": "New York"
+    }
   ```
 
 - **Response:**
@@ -112,30 +112,32 @@ The server should now be running on http://localhost:5000.
 
 - **Request Body:**
   ```bash
-  {
-    "Email": "john.doe@example.com",
-    "Product_Name": "Product A",
-    "Quantity": 2,
-    "Pricing": 100,
-    "MRP": 120
-  }
+    {
+      "Email": "john.doe@example.com",
+      "Product_Name": "Product A",
+      "Quantity": 2,
+      "Pricing": 100,
+      "MRP": 120
+    }
   ```
 
 - **Response:**
   - 201 Created with the created purchase details.
   - 400 Bad Request if the customer is not found or the pricing is greater than the MRP.
   
-####7. Add a New Shipping Record 🚚
+#### 7. Add a New Shipping Record 🚚
 - **Endpoint:** POST /shipping
   - Creates a new shipping record for a customer.
 
 - **Request Body:**
-  {
-    "Email": "john.doe@example.com",
-    "Address": "1234 Elm Street",
-    "City": "New York",
-    "Pincode": "10001"
-  }
+  ```bash
+    {
+      "Email": "john.doe@example.com",
+      "Address": "1234 Elm Street",
+      "City": "New York",
+      "Pincode": "10001"
+    }
+  ```
 
 - **Response:**
   - 201 Created with the created shipping details.
@@ -149,7 +151,7 @@ The server should now be running on http://localhost:5000.
   - 200 OK with customer details.
   - 404 Not Found if no customers are found.
   
-### Testing the API 🧪
+## Testing the API 🧪
 You can use Postman or Insomnia to test the API by making requests to the endpoints listed above. Simply enter the appropriate URL and HTTP method (GET, POST).
 
 ## ⭐ **Show Some Support**
