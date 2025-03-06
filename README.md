@@ -51,17 +51,17 @@ npm start
 The server should now be running on http://localhost:5000.
 
 ### API Endpoints 📡
+
 #### 1. Get All Customers 🧑‍🤝‍🧑
-**Endpoint:** GET /customer
+- **Endpoint:** GET /customer
+- Retrieves all customers.
 
-Retrieves all customers.
-
-**Response:**
+- **Response:**
 - 200 OK with an array of customers.
 - 404 Not Found if no customers are found.
   
-####2. Get Shipping Details by City 🏙️
-**Endpoint:** GET /shipping/city
+#### 2. Get Shipping Details by City 🏙️
+- **Endpoint:** GET /shipping/city
 
 Fetch shipping details based on the provided city.
 
